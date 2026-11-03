@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sounder: search and memory for AI apps</title>
+<meta name="description" content="Sounder stores your documents and conversations as vectors and finds the right passages in milliseconds. Hybrid search, filters and cited answers through one API.">
+<meta name="theme-color" content="#f7f9fc">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/geist-mono-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Hugeicons (free set), stroke 1.5 -->
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none"><path d="M7.5 14.5C7.5 11.2002 7.5 9.55025 8.52513 8.52513C9.55025 7.5 11.2002 7.5 14.5 7.5C17.7998 7.5 19.4497 7.5 20.4749 8.52513C21.5 9.55025 21.5 11.2002 21.5 14.5C21.5 17.7998 21.5 19.4497 20.4749 20.4749C19.4497 21.5 17.7998 21.5 14.5 21.5C11.2002 21.5 9.55025 21.5 8.52513 20.4749C7.5 19.4497 7.5 17.7998 7.5 14.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M7.5 16.5C6.10355 16.5 5.40533 16.5 4.84402 16.3036C3.83866 15.9518 3.0482 15.1613 2.69641 14.156C2.5 13.5947 2.5 12.8964 2.5 11.5V9.5C2.5 6.20017 2.5 4.55025 3.52513 3.52513C4.55025 2.5 6.20017 2.5 9.5 2.5H11.5C12.8964 2.5 13.5947 2.5 14.156 2.69641C15.1613 3.0482 15.9518 3.83866 16.3036 4.84402C16.5 5.40533 16.5 6.10355 16.5 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+  <symbol id="i-tick" viewBox="0 0 24 24" fill="none"><path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none"><path d="M18.5 12L4.99997 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M13 18C13 18 19 13.5811 19 12C19 10.4188 13 6 13 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24" fill="none"><path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none"><path d="M4 8.5L20 8.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M4 15.5L20 15.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none"><path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none"><path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="logo" href="#top" aria-label="Sounder home">
+      <svg viewBox="0 0 22 22" aria-hidden="true"><rect x="1" y="3" width="3.2" height="9" rx="1.6"/><rect x="6.6" y="3" width="3.2" height="15" rx="1.6"/><rect class="logo__deep" x="12.2" y="3" width="3.2" height="17" rx="1.6"/><rect x="17.8" y="3" width="3.2" height="11" rx="1.6"/></svg>
+      Sounder
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#code">Developers</a>
+      <a href="#features">Features</a>
+      <a href="#customers">Customers</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="nav__end">
+      <a class="nav__signin" href="#pricing">Sign in</a>
+      <a class="btn btn--primary btn--sm" href="#pricing">Start free</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Open menu">
+        <svg class="i i--menu"><use href="#i-menu"/></svg>
+        <svg class="i i--close"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="sheet" id="sheet" hidden>
+    <div class="wrap sheet__in">
+      <a href="#how">How it works</a>
+      <a href="#code">Developers</a>
+      <a href="#features">Features</a>
+      <a href="#customers">Customers</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">Questions</a>
+      <div class="sheet__cta">
+        <a class="btn btn--secondary" href="#pricing">Sign in</a>
+        <a class="btn btn--primary" href="#pricing">Start free</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <h1>Give your AI app a memory it can search</h1>
+      <p class="lead">Sounder stores your documents and chats as vectors and finds the right passages in milliseconds. Hybrid search, filters and cited answers, all through one API.</p>
+      <div class="install">
+        <code><span class="install__sign" aria-hidden="true">$</span> npm install sounder</code>
+        <button class="copy" type="button" data-copy="npm install sounder" aria-label="Copy install command">
+          <svg class="i i--copy"><use href="#i-copy"/></svg>
+          <svg class="i i--tick"><use href="#i-tick"/></svg>
+        </button>
+      </div>
+      <div class="actions">
+        <a class="btn btn--primary" href="#pricing">Start free <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--secondary" href="#code">Read the docs</a>
+      </div>
+      <p class="hero__note">Free for your first million vectors. No card needed.</p>
+    </div>
+    <div class="hero__art">
+      <div class="well well--sky hero__well">
+        <div class="illo" data-illos><!-- illos:vector-search --></div>
+      </div>
+      <figure class="snippet" aria-label="A search call and its top three results">
+        <div class="snippet__bar"><span>search.ts</span><span class="chip chip--quiet">38 ms</span></div>
+<pre class="snippet__code"><code><span class="k">const</span> { hits } = <span class="k">await</span> sounder.<span class="f">search</span>({
+  query: <span class="s">"refund after 30 days"</span>,
+  topK: <span class="n">3</span>,
+});</code></pre>
+        <ol class="snippet__hits">
+          <li><span class="score">0.92</span><span class="doc">refunds.md</span><span class="sec">Late returns</span></li>
+          <li><span class="score">0.87</span><span class="doc">billing.md</span><span class="sec">Store credit</span></li>
+          <li><span class="score">0.74</span><span class="doc">faq.md</span><span class="sec">Refund window</span></li>
+        </ol>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="head head--split">
+      <h2 id="how-h">From your data to a cited answer</h2>
+      <p>Point Sounder at your sources once. It keeps the index fresh as they change, so answers never quote last month.</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <div class="well well--mint step__art"><div class="illo" data-illos><!-- illos:data-pipeline --></div></div>
+        <span class="step__no">01</span>
+        <h3>Connect your sources</h3>
+        <p>Sync docs, tickets and chat history from a bucket, a database or the API. Changes arrive in seconds.</p>
+      </li>
+      <li class="step">
+        <div class="well well--mint step__art step__art--ui" aria-hidden="true">
+          <div class="mini">
+            <p class="mini__text">Refunds after 30 days go to store credit, valid for a year.</p>
+            <p class="mini__vec">[0.021, -0.184, 0.377, &hellip;]</p>
+            <div class="mini__tags"><span class="chip">lang: en</span><span class="chip">source: help</span></div>
+          </div>
+        </div>
+        <span class="step__no">02</span>
+        <h3>Embed and index</h3>
+        <p>Sounder splits each document into passages, embeds them with the model you pick and stores them with their metadata.</p>
+      </li>
+      <li class="step">
+        <div class="well well--mint step__art step__art--ui" aria-hidden="true">
+          <div class="mini mini--rank">
+            <div class="rank"><span class="rank__doc">refunds.md</span><span class="rank__bar" style="--w:91%"></span><span class="rank__score">0.92</span></div>
+            <div class="rank"><span class="rank__doc">billing.md</span><span class="rank__bar" style="--w:87%"></span><span class="rank__score">0.87</span></div>
+            <div class="rank"><span class="rank__doc">faq.md</span><span class="rank__bar" style="--w:74%"></span><span class="rank__score">0.74</span></div>
+            <div class="rank rank--dim"><span class="rank__doc">terms.md</span><span class="rank__bar" style="--w:41%"></span><span class="rank__score">0.41</span></div>
+          </div>
+        </div>
+        <span class="step__no">03</span>
+        <h3>Search by meaning</h3>
+        <p>Each query blends vector and keyword ranking, then filters by customer, date or any field you stored.</p>
+      </li>
+      <li class="step">
+        <div class="well well--mint step__art"><div class="illo" data-illos><!-- illos:streaming-tokens --></div></div>
+        <span class="step__no">04</span>
+        <h3>Answer with sources</h3>
+        <p>Stream an answer written from the best passages, with a citation on every claim your users can check.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--code" id="code" aria-labelledby="code-h">
+  <div class="wrap code">
+    <div class="code__copy">
+      <h2 id="code-h">Your first search in a few lines</h2>
+      <p>Typed clients for TypeScript and Python, and a plain HTTP API for everything else. The same query works in all three.</p>
+      <ul class="checks">
+        <li><svg class="i"><use href="#i-check"/></svg>Hybrid ranking is on by default</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Filter on any metadata field</li>
+        <li><svg class="i"><use href="#i-check"/></svg>One namespace per customer</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Answers stream as they are written</li>
+      </ul>
+      <a class="link" href="#faq">See what the API covers <svg class="i"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="panel">
+      <div class="panel__bar">
+        <div class="tabs" role="tablist" aria-label="Language">
+          <button class="tab" type="button" role="tab" id="tab-ts" aria-controls="pane-ts" aria-selected="true">TypeScript</button>
+          <button class="tab" type="button" role="tab" id="tab-py" aria-controls="pane-py" aria-selected="false" tabindex="-1">Python</button>
+          <button class="tab" type="button" role="tab" id="tab-curl" aria-controls="pane-curl" aria-selected="false" tabindex="-1">curl</button>
+        </div>
+        <button class="copy" type="button" aria-label="Copy code">
+          <svg class="i i--copy"><use href="#i-copy"/></svg>
+          <svg class="i i--tick"><use href="#i-tick"/></svg>
+        </button>
+      </div>
+
+      <div class="pane" id="pane-ts" role="tabpanel" aria-labelledby="tab-ts" tabindex="0">
+<pre class="pane__code" data-code><code><span class="k">import</span> { Sounder } <span class="k">from</span> <span class="s">"sounder"</span>;
+
+<span class="k">const</span> sounder = <span class="k">new</span> <span class="f">Sounder</span>({
+  apiKey: process.env.SOUNDER_KEY,
+});
+
+<span class="k">const</span> { hits } = <span class="k">await</span> sounder.<span class="f">search</span>({
+  index: <span class="s">"help-center"</span>,
+  query: <span class="s">"refund after 30 days"</span>,
+  filter: { lang: <span class="s">"en"</span> },
+  topK: <span class="n">3</span>,
+});
+
+console.<span class="f">log</span>(hits);</code></pre>
+        <div class="resp">
+          <div class="resp__bar"><span>Output</span><span class="chip chip--ok">3 hits</span><span class="chip chip--quiet">38 ms</span></div>
+<pre class="resp__code"><code>[
+  { id: <span class="s">"refunds#late"</span>, score: <span class="n">0.92</span> },
+  { id: <span class="s">"billing#credit"</span>, score: <span class="n">0.87</span> },
+  { id: <span class="s">"faq#window"</span>, score: <span class="n">0.74</span> },
+]</code></pre>
+        </div>
+      </div>
+
+      <div class="pane" id="pane-py" role="tabpanel" aria-labelledby="tab-py" tabindex="0" hidden>
+<pre class="pane__code" data-code><code><span class="k">import</span> os
+<span class="k">from</span> sounder <span class="k">import</span> Sounder
+
+sounder = <span class="f">Sounder</span>(api_key=os.environ[<span class="s">"SOUNDER_KEY"</span>])
+
+hits = sounder.<span class="f">search</span>(
+    index=<span class="s">"help-center"</span>,
+    query=<span class="s">"refund after 30 days"</span>,
+    filter={<span class="s">"lang"</span>: <span class="s">"en"</span>},
+    top_k=<span class="n">3</span>,
+)
+
+<span class="k">for</span> hit <span class="k">in</span> hits:
+    <span class="f">print</span>(hit.score, hit.id)</code></pre>
+        <div class="resp">
+          <div class="resp__bar"><span>Output</span><span class="chip chip--ok">3 hits</span><span class="chip chip--quiet">38 ms</span></div>
+<pre class="resp__code"><code><span class="n">0.92</span> refunds#late
+<span class="n">0.87</span> billing#credit
+<span class="n">0.74</span> faq#window</code></pre>
+        </div>
+      </div>
+
+      <div class="pane" id="pane-curl" role="tabpanel" aria-labelledby="tab-curl" tabindex="0" hidden>
+<pre class="pane__code" data-code><code>curl https://api.sounder.dev/v1/indexes/help-center/search \
+  -H <span class="s">"Authorization: Bearer $SOUNDER_KEY"</span> \
+  -H <span class="s">"Content-Type: application/json"</span> \
+  -d <span class="s">'{
+    "query": "refund after 30 days",
+    "filter": { "lang": "en" },
+    "top_k": 3
+  }'</span></code></pre>
+        <div class="resp">
+          <div class="resp__bar"><span>Response</span><span class="chip chip--ok">200 OK</span><span class="chip chip--quiet">38 ms</span></div>
+<pre class="resp__code"><code>{
+  <span class="p">"hits"</span>: [
+    { <span class="p">"id"</span>: <span class="s">"refunds#late"</span>, <span class="p">"score"</span>: <span class="n">0.92</span> },
+    { <span class="p">"id"</span>: <span class="s">"billing#credit"</span>, <span class="p">"score"</span>: <span class="n">0.87</span> },
+    { <span class="p">"id"</span>: <span class="s">"faq#window"</span>, <span class="p">"score"</span>: <span class="n">0.74</span> }
+  ]
+}</code></pre>
+        </div>
+      </div>
+      <p class="sr" aria-live="polite" data-copy-status></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-h">
+  <div class="wrap">
+    <div class="head head--split">
+      <h2 id="features-h">The parts you would otherwise build yourself</h2>
+      <p>Retrieval is more than a nearest neighbour lookup. Sounder handles the caching, limits and failover that real traffic needs.</p>
+    </div>
+    <div class="bento">
+      <article class="tile tile--a well well--sky">
+        <div class="tile__text">
+          <h3>Answers that cite their sources</h3>
+          <p>Sounder pulls the closest passages, writes the answer and marks where every line came from.</p>
+        </div>
+        <div class="tile__art illo" data-illos><!-- illos:rag --></div>
+      </article>
+      <article class="tile tile--b tile--strong well well--deep">
+        <div class="tile__text">
+          <h3>Repeat questions come back from memory</h3>
+          <p>Popular questions are answered from cache. A write clears only the results it changes.</p>
+        </div>
+        <div class="tile__art illo" data-illos><!-- illos:cache-layer --></div>
+        <p class="tile__stat"><b>2<small>ms</small></b><span>median answer for a cached question</span></p>
+      </article>
+      <article class="tile tile--c well well--mint">
+        <div class="tile__text">
+          <h3>Fair limits for every tenant</h3>
+          <p>Give each key a budget, so one busy customer never slows the rest.</p>
+        </div>
+        <div class="tile__art illo" data-illos><!-- illos:rate-limit --></div>
+      </article>
+      <article class="tile tile--d tile--strong well well--blue">
+        <div class="tile__text">
+          <h3>Filters run inside the search</h3>
+          <p>Narrow by customer, language or date before ranking, so the top results are always ones you can show.</p>
+        </div>
+        <div class="filter" aria-label="Example filter">
+          <div class="filter__chips"><span>tenant = "acme"</span><span>lang = "en"</span><span>updated &lt; 30d</span></div>
+          <p class="filter__count"><b>41,208</b> passages, <b>3</b> returned</p>
+        </div>
+      </article>
+      <article class="tile tile--e well well--sky">
+        <div class="tile__text">
+          <h3>Two regions, one endpoint</h3>
+          <p>If a region goes down, queries move to the standby before your users notice.</p>
+        </div>
+        <div class="tile__art illo" data-illos><!-- illos:failover --></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="numbers" aria-label="Sounder in numbers">
+  <div class="wrap">
+    <ul class="figures">
+      <li><p class="fig">38<small>ms</small></p><p>Median search across 100M vectors</p></li>
+      <li><p class="fig">99.99<small>%</small></p><p>Uptime over the last 12 months</p></li>
+      <li><p class="fig">2.1<small>B</small></p><p>Vectors stored by 900 teams</p></li>
+      <li><p class="fig">11</p><p>Regions to keep data near users</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="customers" aria-labelledby="customers-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="customers-h">Teams that stopped tuning search by hand</h2>
+    </div>
+    <ul class="quotes">
+      <li class="quote">
+        <span class="mark mark--1"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8"/><circle class="cut" cx="10" cy="10" r="3.5"/></svg>Halyard</span>
+        <blockquote>Our support bot stopped making up refund rules the week we moved retrieval to Sounder.</blockquote>
+        <p class="who">Mara Lindqvist, Head of Support Engineering</p>
+      </li>
+      <li class="quote">
+        <span class="mark mark--2"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="7" height="16" rx="1.5"/><rect x="11" y="6" width="7" height="12" rx="1.5"/></svg>Quarrystone</span>
+        <blockquote>Forty million contract clauses, and search still comes back before the page finishes painting.</blockquote>
+        <p class="who">Dev Raman, Staff Engineer</p>
+      </li>
+      <li class="quote">
+        <span class="mark mark--3"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 16L10 3L18 16Z"/></svg>Kitewing</span>
+        <blockquote>We deleted two services and a cron job. The filters alone paid for the move.</blockquote>
+        <p class="who">Ines Okafor, CTO</p>
+      </li>
+      <li class="quote">
+        <span class="mark mark--4"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="2" width="16" height="16" rx="8"/><rect class="cut" x="2" y="9" width="16" height="2"/></svg>Bramblebook</span>
+        <blockquote>Each customer gets their own namespace, so nobody ever sees another school&rsquo;s notes.</blockquote>
+        <p class="who">Tomas Weller, Platform Lead</p>
+      </li>
+      <li class="quote">
+        <span class="mark mark--5"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 4h14v3H3zM3 9h10v3H3zM3 14h6v3H3z"/></svg>Saltmarsh Health</span>
+        <blockquote>Clinicians get an answer with the guideline it came from. That is the only kind they trust.</blockquote>
+        <p class="who">Priya Natarajan, Product Director</p>
+      </li>
+      <li class="quote">
+        <span class="mark mark--6"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="6" cy="10" r="4"/><circle cx="14" cy="10" r="4"/></svg>Ottermail</span>
+        <blockquote>Inbox search went from keyword roulette to finding the thread you meant on the first try.</blockquote>
+        <p class="who">Sam Achterberg, Engineering Manager</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="pricing" aria-labelledby="pricing-h">
+  <div class="wrap">
+    <div class="head head--split">
+      <h2 id="pricing-h">Pay for what you store and search</h2>
+      <p>The first million vectors and 100,000 queries are free every month. After that you pay for usage, and you can see the bill coming.</p>
+    </div>
+    <div class="price">
+      <div class="est" role="group" aria-labelledby="est-h">
+        <h3 id="est-h" class="sr">Estimate your monthly bill</h3>
+        <div class="est__row">
+          <div class="est__label"><label for="vectors">Vectors stored</label><output for="vectors" id="vectors-out">25M</output></div>
+          <input id="vectors" type="range" min="0" max="9" step="1" value="4" aria-valuetext="25 million vectors">
+          <div class="est__scale" aria-hidden="true"><span>1M</span><span>1B</span></div>
+        </div>
+        <div class="est__row">
+          <div class="est__label"><label for="queries">Queries per month</label><output for="queries" id="queries-out">2M</output></div>
+          <input id="queries" type="range" min="0" max="9" step="1" value="4" aria-valuetext="2 million queries">
+          <div class="est__scale" aria-hidden="true"><span>100K</span><span>100M</span></div>
+        </div>
+        <dl class="est__lines">
+          <div><dt>Storage <span>$0.80 per million vectors</span></dt><dd id="cost-store">$19.20</dd></div>
+          <div><dt>Queries <span>$4 per million queries</span></dt><dd id="cost-query">$7.60</dd></div>
+        </dl>
+        <div class="est__total">
+          <p>Estimated monthly bill</p>
+          <output id="total" aria-live="polite">$26.80</output>
+        </div>
+        <div class="est__cta">
+          <a class="btn btn--primary" href="#top">Start free <svg class="i"><use href="#i-arrow"/></svg></a>
+          <a class="link" href="#faq">Over a billion vectors? Talk to us</a>
+        </div>
+      </div>
+      <div class="well well--lilac price__art">
+        <div class="illo" data-illos><!-- illos:billing-basin --></div>
+        <ul class="price__facts">
+          <li><b>Free</b> 1M vectors and 100K queries each month</li>
+          <li><b>Budgets</b> Email at 80% and 100%, hard caps per key</li>
+          <li><b>Enterprise</b> Private regions, SSO and a 99.99% SLA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq">
+    <div class="faq__head">
+      <h2 id="faq-h">Questions</h2>
+      <p>Not answered here? <a class="link link--inline" href="mailto:hello@sounder.dev">Write to us</a> and an engineer will reply.</p>
+    </div>
+    <div class="faq__list">
+      <details>
+        <summary>What counts as a vector?<svg class="i"><use href="#i-down"/></svg></summary>
+        <p>One embedded passage with its text and metadata. A 2,000 word document usually becomes 8 to 12 vectors.</p>
+      </details>
+      <details>
+        <summary>Which embedding models can I use?<svg class="i"><use href="#i-down"/></svg></summary>
+        <p>Bring your own vectors, or let Sounder embed for you with one of its hosted open models. You can switch models later and re-embed in the background.</p>
+      </details>
+      <details>
+        <summary>Do I still need a keyword search engine?<svg class="i"><use href="#i-down"/></svg></summary>
+        <p>No. Every query blends vector and keyword ranking, and you can weight one over the other per query.</p>
+      </details>
+      <details>
+        <summary>How fresh is the index?<svg class="i"><use href="#i-down"/></svg></summary>
+        <p>A write is searchable in about a second. Synced sources check for changes every minute, or right away when they send a webhook.</p>
+      </details>
+      <details>
+        <summary>Where is my data stored?<svg class="i"><use href="#i-down"/></svg></summary>
+        <p>In the region you pick, encrypted at rest and in transit. Enterprise plans can run in a private region inside your own cloud account.</p>
+      </details>
+      <details>
+        <summary>What happens if I go over my estimate?<svg class="i"><use href="#i-down"/></svg></summary>
+        <p>Nothing stops. You get an email at 80% and 100% of a budget you set, and you can put a hard cap on any key.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <a class="logo" href="#top" aria-label="Sounder home">
+          <svg viewBox="0 0 22 22" aria-hidden="true"><rect x="1" y="3" width="3.2" height="9" rx="1.6"/><rect x="6.6" y="3" width="3.2" height="15" rx="1.6"/><rect class="logo__deep" x="12.2" y="3" width="3.2" height="17" rx="1.6"/><rect x="17.8" y="3" width="3.2" height="11" rx="1.6"/></svg>
+          Sounder
+        </a>
+        <p>Search and memory for AI apps.</p>
+        <a class="btn btn--primary" href="#pricing">Start free</a>
+      </div>
+      <nav class="foot__cols" aria-label="Footer">
+        <div><h3>Product</h3><a href="#how">How it works</a><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#customers">Customers</a></div>
+        <div><h3>Developers</h3><a href="#code">Quickstart</a><a href="#code">Client libraries</a><a href="#code">HTTP API</a><a href="#faq">Questions</a></div>
+        <div><h3>Company</h3><a href="#top">About</a><a href="#top">Careers</a><a href="#top">Security</a><a href="mailto:hello@sounder.dev">Contact</a></div>
+      </nav>
+    </div>
+    <div class="foot__legal">
+      <span>&copy; 2026 Sounder</span>
+      <a class="illos-credit" href="https://illos.dev/?utm_source=sounder-template&amp;utm_medium=example" rel="noopener"><svg viewBox="-26.8 0 400 400" aria-hidden="true"><path fill-rule="evenodd" d="M0,253.81 L0,100 L173.21,0 L346.41,100 L346.41,300 L173.21,400 L76.6,344.23 L76.6,204 L116.6,227.09 L116.6,321.13 L173.21,353.81 L306.41,276.91 L306.41,123.09 L173.21,46.19 L40,123.09 L40,276.91 Z M76.6,140 L116.6,163.09 L116.6,203.09 L76.6,180 Z"/></svg>Animated assets by Illos</a>
+      <span class="foot__links"><a href="#top">Privacy</a><a href="#top">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

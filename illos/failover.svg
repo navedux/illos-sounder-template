@@ -1,0 +1,141 @@
+<svg class="sh-failover" xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" fill="none" stroke="#1daf9c" role="img" aria-labelledby="sh-failover-t" aria-describedby="sh-failover-d">
+<title id="sh-failover-t">Failover</title>
+<desc id="sh-failover-d">Requests flow through a router to one of two regions of server racks. The primary region loses power, the next request is turned back at its edge, and the router marks it down and sends that request and every one after it to the standby, which takes over; a strip of served requests shows no empty slot.</desc>
+<style>@scope (svg.sh-failover) {
+:scope{--_ground:#ffffff;--_ink:#2a2a2a;--_ramp-1:#16645a;--_ramp-2:#1daf9c;--_ramp-3:#3fdec9;--_ramp-4:#c2f5ee;--_mark:#178c7d;--_spark:#0b463e}
+@media (prefers-color-scheme: dark){:scope{--_ground:#101112;--_ink:#dadadc;--_ramp-1:#84ebdd;--_ramp-2:#3fdec9;--_ramp-3:#1daf9c;--_ramp-4:#1a7569;--_mark:#3fdec9;--_spark:#ffffff}}
+:scope{stroke:none;--g:var(--illos-ground,var(--_ground));--k:var(--illos-ink,var(--_ink))}
+.b0,.b1,.b2,.b3{fill:none;stroke-dasharray:7 2.4}
+.b0{stroke:var(--illos-ramp-1,var(--_ramp-1))}.b1{stroke:var(--illos-ramp-2,var(--_ramp-2))}.b2{stroke:var(--illos-ramp-3,var(--_ramp-3))}.b3{stroke:var(--illos-ramp-4,var(--_ramp-4));opacity:.55}
+.sc{fill:none;stroke:rgb(from color-mix(in srgb,var(--illos-ramp-4,var(--_ramp-4)) 18%,var(--g)) r g b/clamp(.33,(r + g + b)/382.5,1));stroke-width:.8}
+.bm{fill:none;stroke:var(--illos-ramp-2,var(--_ramp-2));stroke-width:2.4;stroke-dasharray:5 2.4}
+.sp{fill:none;stroke:var(--illos-spark,var(--_spark));stroke-width:1.2;stroke-linecap:round;opacity:.85}
+.gr{stroke:rgb(from color-mix(in srgb,var(--k) 9%,var(--g)) r g b/clamp(.67,(r + g + b)/382.5,1));stroke-width:1}
+.bx,.ln,.lv{fill:none;stroke:var(--illos-mark,var(--_mark));stroke-width:1.2}
+.dot{fill:var(--illos-mark,var(--_mark))}.cf{fill:var(--illos-mark,var(--_mark))}
+.ct{fill:none;stroke:var(--g);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.tx{fill:none;stroke:var(--illos-mark,var(--_mark));stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+@keyframes sh-failover_down{0%{opacity:1}6.667%{opacity:1;animation-timing-function:cubic-bezier(0.23,1,0.32,1)}9.333%{opacity:0}73.556%{opacity:0;animation-timing-function:cubic-bezier(0.23,1,0.32,1)}76.222%{opacity:1}100%{opacity:1}}
+.down{opacity:1;animation:sh-failover_down 4.5s linear both}
+@keyframes sh-failover_clock{0%{opacity:0}100%{opacity:0}}
+.sh-clock{animation:sh-failover_clock 4.5s linear both}
+*{animation-iteration-count:infinite!important;animation-play-state:var(--illos-play,running)!important}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+}
+</style>
+<g class="sh-still"><path class="sc" d="M4 0V460M11 0V460M18 0V460M25 0V460M32 0V460M39 0V460M46 0V460M53 0V460M60 0V460M67 0V460M74 0V460M81 0V460M88 0V460M95 0V460M102 0V460M109 0V460M116 0V460M123 0V460M130 0V460M137 0V460M144 0V460M151 0V460M158 0V460M165 0V460M172 0V460M179 0V460M186 0V460M193 0V460M200 0V460M207 0V460M214 0V460M221 0V460M228 0V460M235 0V460M242 0V460M249 0V460M256 0V460M263 0V460M270 0V460M277 0V460M284 0V460M291 0V460M298 0V460M305 0V460M312 0V460M319 0V460M326 0V460M333 0V460M340 0V460M347 0V460M354 0V460M361 0V460M368 0V460M375 0V460M382 0V460M389 0V460M396 0V460M403 0V460M410 0V460M417 0V460M424 0V460M431 0V460M438 0V460M445 0V460M452 0V460M459 0V460M466 0V460M473 0V460M480 0V460M487 0V460M494 0V460M501 0V460M508 0V460M515 0V460M522 0V460M529 0V460M536 0V460M543 0V460M550 0V460M557 0V460M564 0V460M571 0V460M578 0V460M585 0V460M592 0V460M599 0V460M606 0V460M613 0V460M620 0V460M627 0V460M634 0V460M641 0V460M648 0V460M655 0V460M662 0V460M669 0V460M676 0V460M683 0V460M690 0V460M697 0V460M704 0V460M711 0V460M718 0V460"/><path class="gr" d="M0 0V460M96 0V460M192 0V460M288 0V460M384 0V460M480 0V460M576 0V460M672 0V460M0 0H720M0 96H720M0 192H720M0 288H720M0 384H720"/><path class="b0" d="M123 65.8V72.8M137 65.8V72.8M151 65.8V72.8M165 47V54M179 47V54M186 216.2V223.2M193 65.8V72.8M200 216.2V223.2M207 65.8V72.8M221 65.8V72.8M221 216.2V223.2M235 65.8V72.8M249 65.8V72.8M263 65.8V72.8M277 47V54M291 47V54M305 65.8V72.8M319 65.8V72.8M333 65.8V72.8M473 319.6V326.6M480 300.8V307.8M480 319.6V326.6M480 338.4V345.4M480 357.2V364.2M536 338.4V345.4M543 300.8V307.8M543 319.6V326.6M543 338.4V345.4M543 357.2V364.2M606 300.8V307.8M606 319.6V326.6M606 338.4V345.4M606 357.2V364.2" stroke-width="3.6"/><path class="b1" d="M179 216.2V223.2M214 216.2V223.2M221 206.8V213.8M221 225.6V232.6M228 216.2V223.2M235 197.4V204.4M242 216.2V223.2M277 235V242M291 263.2V270.2M298 272.6V279.6M319 310.2V317.2M340 329V336M361 329V336M389 329V336M459 300.8V307.8M459 319.6V326.6M459 338.4V345.4M459 357.2V364.2M466 300.8V307.8M466 319.6V326.6M466 338.4V345.4M466 357.2V364.2M473 300.8V307.8M473 338.4V345.4M473 357.2V364.2M522 300.8V307.8M522 319.6V326.6M522 338.4V345.4M522 357.2V364.2M529 300.8V307.8M529 319.6V326.6M529 357.2V364.2M536 300.8V307.8M536 319.6V326.6M536 357.2V364.2M585 300.8V307.8M585 319.6V326.6M585 338.4V345.4M585 357.2V364.2M592 300.8V307.8M592 319.6V326.6M592 338.4V345.4M592 357.2V364.2M599 300.8V307.8M599 319.6V326.6M599 338.4V345.4M599 357.2V364.2" stroke-width="2.7"/><path class="b2" d="M32 188V195M39 141V148M39 169.2V176.2M39 188V195M39 216.2V223.2M39 291.4V298.4M46 159.8V166.8M46 206.8V213.8M46 225.6V232.6M46 244.4V251.4M46 272.6V279.6M46 300.8V307.8M53 150.4V166.8M53 225.6V232.6M53 244.4V251.4M53 263.2V270.2M53 291.4V298.4M60 188V195M60 206.8V223.2M60 244.4V251.4M60 263.2V270.2M60 282V289M60 300.8V307.8M67 216.2V223.2M67 263.2V270.2M67 310.2V317.2M74 159.8V166.8M74 206.8V213.8M74 253.8V260.8M74 310.2V317.2M81 206.8V213.8M81 282V289M88 188V195M88 244.4V251.4M95 206.8V213.8M95 235V242M158 216.2V223.2M172 216.2V223.2M186 225.6V232.6M193 216.2V223.2M200 206.8V213.8M200 225.6V232.6M207 197.4V204.4M207 235V242M214 197.4V213.8M214 225.6V242M221 197.4V204.4M221 235V242M228 197.4V213.8M228 225.6V242M235 206.8V223.2M235 235V242M242 206.8V213.8M242 225.6V232.6M249 216.2V223.2M256 216.2V223.2M270 225.6V232.6M312 300.8V307.8M326 319.6V326.6M333 319.6V326.6M347 329V336M354 329V336M368 329V336M375 329V336M382 329V336M452 291.4V373.6M459 291.4V298.4M459 366.6V373.6M466 291.4V298.4M466 366.6V373.6M473 291.4V298.4M473 366.6V373.6M480 291.4V298.4M480 366.6V373.6M487 291.4V373.6M501 188V195M501 225.6V232.6M515 291.4V373.6M522 291.4V298.4M522 366.6V373.6M529 291.4V298.4M529 338.4V345.4M529 366.6V373.6M536 291.4V298.4M536 366.6V373.6M543 291.4V298.4M543 366.6V373.6M550 291.4V373.6M578 291.4V373.6M585 291.4V298.4M585 366.6V373.6M592 291.4V298.4M592 366.6V373.6M599 291.4V298.4M599 366.6V373.6M606 291.4V298.4M606 366.6V373.6M613 291.4V373.6" stroke-width="1.8"/><path class="b3" d="M32 169.2V185.6M32 206.8V213.8M32 244.4V251.4M39 159.8V166.8M39 244.4V251.4M39 282V289M46 216.2V223.2M46 235V242M53 169.2V176.2M53 300.8V307.8M60 141V148M60 159.8V176.2M60 253.8V260.8M60 272.6V279.6M60 310.2V317.2M67 141V148M67 188V195M67 206.8V213.8M67 282V289M74 122.2V129.2M74 150.4V157.4M74 169.2V176.2M74 225.6V232.6M74 282V289M81 150.4V166.8M81 178.6V195M81 300.8V307.8M88 141V148M88 159.8V166.8M88 225.6V232.6M88 282V289M95 159.8V166.8M95 178.6V195M95 244.4V251.4M116 216.2V223.2M123 47V54M130 216.2V223.2M137 47V54M144 216.2V223.2M151 47V54M165 65.8V72.8M179 65.8V72.8M179 206.8V213.8M179 225.6V232.6M186 206.8V213.8M193 47V54M193 206.8V213.8M193 225.6V232.6M207 47V54M207 206.8V232.6M221 47V54M235 47V54M235 225.6V232.6M249 47V54M263 47V54M263 216.2V232.6M270 206.8V213.8M277 65.8V72.8M277 206.8V213.8M284 197.4V204.4M291 65.8V72.8M291 188V195M298 178.6V185.6M305 47V54M305 169.2V176.2M312 159.8V166.8M319 47V54M319 150.4V157.4M326 141V148M333 47V54M333 131.6V138.6M340 122.2V129.2M347 122.2V129.2M354 112.8V119.8M361 112.8V119.8M368 112.8V119.8M375 112.8V119.8M382 112.8V119.8M389 112.8V119.8M396 112.8V119.8M403 112.8V119.8M410 112.8V119.8M417 112.8V119.8M431 263.2V279.6M431 310.2V326.6M431 366.6V373.6M438 263.2V279.6M438 291.4V317.2M438 329V336M438 376V383M445 291.4V307.8M445 329V336M445 347.8V354.8M452 75.2V157.4M452 282V289M452 385.4V392.4M459 75.2V82.2M459 150.4V157.4M459 282V289M459 329V336M459 385.4V392.4M466 75.2V82.2M466 150.4V157.4M466 263.2V270.2M466 282V289M466 310.2V317.2M466 347.8V354.8M473 75.2V82.2M473 150.4V157.4M473 310.2V317.2M480 75.2V82.2M480 150.4V157.4M480 263.2V270.2M480 347.8V354.8M480 376V383M487 75.2V157.4M494 282V289M494 329V336M494 385.4V392.4M501 206.8V213.8M501 272.6V279.6M501 291.4V298.4M501 347.8V354.8M501 385.4V392.4M508 282V289M508 310.2V317.2M508 338.4V354.8M508 366.6V373.6M508 385.4V392.4M515 75.2V157.4M515 263.2V270.2M515 385.4V392.4M522 75.2V82.2M522 150.4V157.4M522 263.2V279.6M522 310.2V317.2M522 347.8V354.8M529 75.2V82.2M529 150.4V157.4M536 75.2V82.2M536 150.4V157.4M536 263.2V279.6M536 329V336M536 347.8V354.8M536 376V383M543 75.2V82.2M543 150.4V157.4M543 272.6V289M543 329V336M543 376V383M550 75.2V157.4M550 282V289M550 376V383M557 272.6V289M557 357.2V364.2M564 300.8V317.2M564 385.4V392.4M571 272.6V279.6M571 319.6V326.6M571 347.8V354.8M571 366.6V392.4M578 75.2V157.4M578 385.4V392.4M585 75.2V82.2M585 150.4V157.4M585 282V289M585 310.2V317.2M585 329V336M585 347.8V354.8M585 376V383M592 75.2V82.2M592 150.4V157.4M592 263.2V270.2M592 282V289M592 329V336M592 347.8V354.8M599 75.2V82.2M599 150.4V157.4M599 263.2V289M599 310.2V317.2M606 75.2V82.2M606 150.4V157.4M606 347.8V354.8M606 385.4V392.4M613 75.2V157.4M613 272.6V279.6M620 272.6V279.6M620 300.8V307.8M620 347.8V354.8M620 366.6V373.6M627 263.2V270.2M627 282V289M627 310.2V317.2M627 338.4V345.4M627 366.6V373.6" stroke-width="1.1"/><path class="sp" d="M137 68.2v1.2M165 49.4v1.2M179 49.4v1.2M186 218.6v1.2M263 68.2v1.2M291 49.4v1.2M319 68.2v1.2M480 303.2v1.2M480 340.8v1.2M543 322v1.2M543 340.8v1.2M606 303.2v1.2M606 340.8v1.2M606 359.6v1.2"/></g>
+<path class="tx" d="M646 104.2L646 98.8L648.7 98.8L649.6 99.7L649.6 100.6L648.7 101.5L646 101.5M651.76 104.2L651.76 98.8L654.46 98.8L655.36 99.7L655.36 100.6L654.46 101.5L651.76 101.5M653.56 101.5L655.36 104.2M658.42 98.8L660.22 98.8M659.32 98.8L659.32 104.2M658.42 104.2L660.22 104.2M663.28 104.2L663.28 98.8L665.08 101.5L666.88 98.8L666.88 104.2M669.04 104.2L669.04 100.6L670.84 98.8L672.64 100.6L672.64 104.2M669.04 101.95L672.64 101.95M674.8 104.2L674.8 98.8L677.5 98.8L678.4 99.7L678.4 100.6L677.5 101.5L674.8 101.5M676.6 101.5L678.4 104.2M680.56 98.8L682.36 101.5L684.16 98.8M682.36 101.5L682.36 104.2"/><g class="down"><g class="chip"><rect class="cf" x="646" y="112.8" width="39.44" height="14.9"/><path class="ct" d="M651 116.8L651 123.7L654.45 123.7L655.6 122.55L655.6 117.95L654.45 116.8L651 116.8M659.51 116.8L661.81 116.8L662.96 117.95L662.96 122.55L661.81 123.7L659.51 123.7L658.36 122.55L658.36 117.95L659.51 116.8M665.72 116.8L666.87 123.7L668.02 120.25L669.17 123.7L670.32 116.8M673.08 123.7L673.08 116.8L677.68 123.7L677.68 116.8"/></g></g><g class="box"><path class="bx" pathLength="1" d="M415.5 251.2H642.5V406.8H415.5Z"/><circle class="dot" cx="415.5" cy="251.2" r="2.2"/><circle class="dot" cx="642.5" cy="251.2" r="2.2"/><circle class="dot" cx="415.5" cy="406.8" r="2.2"/><circle class="dot" cx="642.5" cy="406.8" r="2.2"/><g class="chip"><rect class="cf" x="415.5" y="251.2" width="61.52" height="14.9"/><path class="ct" d="M425.1 256.35L423.95 255.2L421.65 255.2L420.5 256.35L420.5 257.5L421.65 258.65L423.95 258.65L425.1 259.8L425.1 260.95L423.95 262.1L421.65 262.1L420.5 260.95M427.86 255.2L432.46 255.2M430.16 255.2L430.16 262.1M435.22 262.1L435.22 257.5L437.52 255.2L439.82 257.5L439.82 262.1M435.22 259.22L439.82 259.22M442.58 262.1L442.58 255.2L447.18 262.1L447.18 255.2M449.94 255.2L449.94 262.1L453.39 262.1L454.54 260.95L454.54 256.35L453.39 255.2L449.94 255.2M457.3 255.2L457.3 262.1L460.75 262.1L461.9 260.95L461.9 259.8L460.75 258.65L457.3 258.65M457.3 255.2L460.75 255.2L461.9 256.35L461.9 257.5L460.75 258.65M464.66 255.2L466.96 258.65L469.26 255.2M466.96 258.65L466.96 262.1"/></g></g>
+<rect class="sh-clock" width="0" height="0"/>
+<metadata class="illos-field" data-cycle="4.5"><![CDATA[vec2 atA(float u) { float x = mix(237.0, 420.0, u); return vec2(x, 219.7000 + -106.9000 * smoothstep(251.0, 370.0, x)); }
+vec2 atB(float u) { float x = mix(237.0, 391.5000, u); return vec2(x, 219.7000 + 109.3000 * smoothstep(251.0, 341.5000, x)); }
+// a rack of 6 columns by 9 cells: rails, caps, four units with a status light each. act is 0 dark, 0.5 standing by,
+// 1 serving; hit flashes its lights.
+float rack(float col, float cell, float c0, float k0, float act, float hit, float ph, float s) {
+  float lc = col - c0; float lr = cell - k0;
+  if (lc < 0.0 || lc > 5.0 || lr < 0.0 || lr > 8.0) return 0.0;
+  float frame = 0.2 + 0.26 * min(act * 2.0, 1.0);
+  if (lc < 0.5 || lc > 4.5 || lr < 0.5 || lr > 7.5) return frame;
+  if (mod(lr, 2.0) < 0.5) return 0.0;
+  if (lc > 3.5) return mix(act, 1.1 + 0.4 * hit, sm(0.6, 0.9, act));
+  return act * (0.68 + 0.08 * sin(2.0 * ph + hash(vec2(lr + s, lc)) * 30.0));
+}
+// a flash of width w round time s, on the cycle: the nearer of s and its copy a cycle away
+float at(float t, float s, float w) { float d = t - s; d -= T * floor(d / T + 0.5); return exp(-d * d / w); }
+// a line's band, at least a column wide and a cell tall
+float band(float d, float k) { return k * (1.0 - sm(3.6, 4.8, abs(d))); }
+float field(vec2 p, float t) {
+  if (p.x < 24.0 || p.x > 696.0 || p.y < 24.0 || p.y > 436.0) return 0.0;
+  float ph = TAU * t / T;
+  float col = floor((p.x - 4.0) / 7.0 + 0.5);
+  float cell = floor(p.y / 9.4);
+  float v = 0.0;
+  // the regions' states: the primary boots, stands by, serves, loses power; the standby serves, stands down, takes over
+  float pa = t < 1.0 ? sm(0.3, 0.8, t) : 1.0 - sm(2.8500, 3.1000, t);
+  float actA = t < 1.0 ? 0.5 * sm(0.3, 0.8, t) : (0.5 + 0.5 * sm(1.6, 1.8, t)) * (1.0 - sm(2.8500, 3.1000, t));
+  float actB = t < 2.6 ? 1.0 - 0.5 * sm(1.95, 2.2, t) : 0.5 + 0.5 * sm(3.3100, 3.5300, t);
+  float flash = exp(-pow(t - 2.8800, 2.0) / 0.0012);
+  float toA = sm(1.6, 1.7, t) * (1.0 - sm(3.3100, 3.4100, t));
+  float hitA = 0.0; float hitB = 0.0;
+  hitB += at(t, 0.5300, 0.006);
+  hitB += at(t, 1.0925, 0.006);
+  hitB += at(t, 1.6550, 0.006);
+  hitA += at(t, 2.2175, 0.006);
+  hitA += at(t, 2.7800, 0.006);
+  hitB += at(t, 3.7600, 0.006);
+  hitB += at(t, 3.9050, 0.006);
+  hitB += at(t, 4.4675, 0.006);
+  // the floors: faint ground; the primary's goes out with its power
+  float hs = hash(floor(p / vec2(7.0, 9.4)) + 5.0);
+  if (col >= 61.0 && col <= 89.0) {
+    if (cell >= 5.0 && cell <= 18.0) v = max(v, step(0.62, hs) * (0.16 + 0.04 * sin(ph + hs * 40.0)) * pa + 0.6 * flash * step(0.62, hs));
+    if (cell >= 28.0 && cell <= 41.0) v = max(v, step(0.62, hs) * (0.16 + 0.04 * sin(ph + hs * 40.0)));
+  }
+  v = max(v, rack(col, cell, 64.0, 8.0, actA, hitA, ph, 0.0) + 0.7 * flash * step(0.1, rack(col, cell, 64.0, 8.0, 1.0, 0.0, ph, 0.0)));
+  v = max(v, rack(col, cell, 64.0, 31.0, actB, hitB, ph, 3.0));
+  v = max(v, rack(col, cell, 73.0, 8.0, actA, 0.0, ph, 1.0) + 0.7 * flash * step(0.1, rack(col, cell, 73.0, 8.0, 1.0, 0.0, ph, 0.0)));
+  v = max(v, rack(col, cell, 73.0, 31.0, actB, 0.0, ph, 4.0));
+  v = max(v, rack(col, cell, 82.0, 8.0, actA, 0.0, ph, 2.0) + 0.7 * flash * step(0.1, rack(col, cell, 82.0, 8.0, 1.0, 0.0, ph, 0.0)));
+  v = max(v, rack(col, cell, 82.0, 31.0, actB, 0.0, ph, 5.0));
+  // the replication line: dotted, from the primary's floor to the standby's box; copies run from the serving region
+  if (abs(p.x - 501.0) < 1.0 && p.y > 184.6000 && p.y < 241.2000) v = max(v, mod(cell, 2.0) < 0.5 ? 0.32 : 0.0);
+  { float u = clamp((t - 0.8000) / 0.25, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, vec2(501.0, mix(229.2000, 190.6000, ease(u))), 7.0, 1.0 * sm(0.0, 0.15, u) * (1.0 - sm(0.85, 1.0, u))); }
+  { float u = clamp((t - 1.0500) / 0.25, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, vec2(501.0, mix(229.2000, 190.6000, ease(u))), 7.0, 1.0 * sm(0.0, 0.15, u) * (1.0 - sm(0.85, 1.0, u))); }
+  { float u = clamp((t - 1.3000) / 0.25, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, vec2(501.0, mix(229.2000, 190.6000, ease(u))), 7.0, 1.0 * sm(0.0, 0.15, u) * (1.0 - sm(0.85, 1.0, u))); }
+  { float u = clamp((t - 2.0) / 0.25, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, vec2(501.0, mix(190.6000, 229.2000, ease(u))), 7.0, 1.0 * sm(0.0, 0.15, u) * (1.0 - sm(0.85, 1.0, u))); }
+  { float u = clamp((t - 2.4000) / 0.25, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, vec2(501.0, mix(190.6000, 229.2000, ease(u))), 7.0, 1.0 * sm(0.0, 0.15, u) * (1.0 - sm(0.85, 1.0, u))); }
+  // the users: a crowd of faint points that flicker, and the dotted way in to the router
+  {
+    vec2 d = (p - vec2(64.0, 219.7000)) / vec2(38.0, 100.0);
+    if (length(d) < 1.0) v = max(v, step(0.6, hs) * (0.46 + 0.12 * sin(ph + hs * 50.0)) * (1.0 - 0.35 * length(d)));
+  }
+  if (abs(p.y - 219.7000) < 1.0 && p.x > 108.0 && p.x < 201.0) v = max(v, mod(col, 2.0) < 0.5 ? 0.3 : 0.0);
+  // the router: a dense core in a ring, and its two branches; the one it sends down is lit
+  v += blob(p, vec2(221.0, 219.7000), 13.0, 1.1 + 0.4 * exp(-pow(t - 3.3100, 2.0) / 0.003));
+  v += 0.5 * exp(-pow(length(p - vec2(221.0, 219.7000)) - 22.0, 2.0) / 16.0);
+  if (p.x > 237.0 && p.x < 420.0) v = max(v, band(p.y - atA(clamp((p.x - 237.0) / 183.0, 0.0, 1.0)).y, 0.26 + 0.32 * toA));
+  if (p.x > 237.0 && p.x < 391.5000) v = max(v, band(p.y - atB(clamp((p.x - 237.0) / 154.5000, 0.0, 1.0)).y, 0.26 + 0.32 * (1.0 - toA)));
+  // the requests: in from the crowd (one crosses the seam), then down a branch; the one sent to the dead primary is
+  // turned back at its edge, and resent to the standby
+  for (int j = 0; j < 8; j++) for (int w = 0; w <= 1; w++) {
+    float a = 0.0800 + 0.5625 * float(j) + float(w) * T;
+    float u = clamp((t - a + 0.35) / 0.35, 0.0, 1.0);
+    if (u > 0.0 && u < 1.0) v += blob(p, vec2(mix(108.0, 207.0, u), 219.7000), 8.0, 1.15 * sm(0.0, 0.1, u));
+  }
+  { float u = clamp((t - 0.0800) / 0.4000, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, atB(ease(u)), 8.0, 1.15 * (1.0 - sm(0.9, 1.0, u))); }
+  { float u = clamp((t - 0.6425) / 0.4000, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, atB(ease(u)), 8.0, 1.15 * (1.0 - sm(0.9, 1.0, u))); }
+  { float u = clamp((t - 1.2050) / 0.4000, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, atB(ease(u)), 8.0, 1.15 * (1.0 - sm(0.9, 1.0, u))); }
+  { float u = clamp((t - 1.7675) / 0.4000, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, atA(ease(u)), 8.0, 1.15 * (1.0 - sm(0.9, 1.0, u))); }
+  { float u = clamp((t - 2.3300) / 0.4000, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, atA(ease(u)), 8.0, 1.15 * (1.0 - sm(0.9, 1.0, u))); }
+  { float u = clamp((t - 2.8925) / 0.4000, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, atA(ease(u)), 8.0, 1.15);
+    float b = clamp((t - 3.2925) / 0.18, 0.0, 1.0); if (b > 0.0 && b < 1.0) v += blob(p, atA(1.0) - vec2(22.0 * (1.0 - pow(1.0 - b, 3.0)), 0.0), 8.0, 1.15 * (1.0 - b));
+    float r = clamp((t - 3.3100) / 0.4000, 0.0, 1.0); if (r > 0.0 && r < 1.0) v += blob(p, atB(ease(r)), 8.0, 1.15 * (1.0 - sm(0.9, 1.0, r))); }
+  { float u = clamp((t - 3.4550) / 0.4000, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, atB(ease(u)), 8.0, 1.15 * (1.0 - sm(0.9, 1.0, u))); }
+  { float u = clamp((t - 4.0175) / 0.4000, 0.0, 1.0); if (u > 0.0 && u < 1.0) v += blob(p, atB(ease(u)), 8.0, 1.15 * (1.0 - sm(0.9, 1.0, u))); }
+  // the strip: a slot opens at the right as each request reaches the router, and fills, in its region's row, once
+  // that request is served
+  float n = 0.0;
+  n += ease((t - 0.0800) / 0.3);
+  n += ease((t - 0.6425) / 0.3);
+  n += ease((t - 1.2050) / 0.3);
+  n += ease((t - 1.7675) / 0.3);
+  n += ease((t - 2.3300) / 0.3);
+  n += ease((t - 2.8925) / 0.3);
+  n += ease((t - 3.4550) / 0.3);
+  n += ease((t - 4.0175) / 0.3);
+  float k = cell - 5.0;
+  if (p.x > 100.0 && p.x < 350.0 && k > -0.5 && k < 2.5 && mod(k, 2.0) < 0.5) {
+    float q = floor(n - 1.0 - (330.0 - p.x) / 14.0 + 0.5);
+    float cx = 330.0 - 14.0 * (n - 1.0 - q);
+    if (abs(p.x - cx) < 3.5 && cx > 106.0 && cx < 344.0) {
+      float j = mod(q, 8.0);
+      float inA = (abs(j - 3.0) < 0.5 || abs(j - 4.0) < 0.5) ? 1.0 : 0.0;
+      float s = j < 0.5 ? 0.4800 : j < 1.5 ? 1.0425 : j < 2.5 ? 1.6050 : j < 3.5 ? 2.1675 : j < 4.5 ? 2.7300 : j < 5.5 ? 3.7100 : j < 6.5 ? 3.8550 : 4.4175;
+      float done = q < -0.5 ? 1.0 : sm(s, s + 0.06, t);
+      float wt = clamp((cx - 106.0) / 14.0, 0.0, 1.0) * clamp((344.0 - cx) / 14.0, 0.0, 1.0);
+      float mine = k < 0.5 ? inA : 1.0 - inA;
+      v = max(v, wt * (0.18 + (mine * 0.92) * done));
+    }
+  }
+  return v;
+}]]></metadata>
+</svg>

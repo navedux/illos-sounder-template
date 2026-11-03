@@ -1,0 +1,147 @@
+<svg class="sh-rag" xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" fill="none" stroke="#1daf9c" role="img" aria-labelledby="sh-rag-t" aria-describedby="sh-rag-d">
+<title id="sh-rag-t">RAG answer</title>
+<desc id="sh-rag-d">A question lands among a field of document pages; the three closest pages light up and are pulled in around it, and an answer page beside them writes itself line by line from those three, each part ending in a citation mark.</desc>
+<style>@scope (svg.sh-rag) {
+:scope{--_ground:#ffffff;--_ink:#2a2a2a;--_ramp-1:#16645a;--_ramp-2:#1daf9c;--_ramp-3:#3fdec9;--_ramp-4:#c2f5ee;--_mark:#178c7d;--_spark:#0b463e}
+@media (prefers-color-scheme: dark){:scope{--_ground:#101112;--_ink:#dadadc;--_ramp-1:#84ebdd;--_ramp-2:#3fdec9;--_ramp-3:#1daf9c;--_ramp-4:#1a7569;--_mark:#3fdec9;--_spark:#ffffff}}
+:scope{stroke:none;--g:var(--illos-ground,var(--_ground));--k:var(--illos-ink,var(--_ink))}
+.b0,.b1,.b2,.b3{fill:none;stroke-dasharray:7 2.4}
+.b0{stroke:var(--illos-ramp-1,var(--_ramp-1))}.b1{stroke:var(--illos-ramp-2,var(--_ramp-2))}.b2{stroke:var(--illos-ramp-3,var(--_ramp-3))}.b3{stroke:var(--illos-ramp-4,var(--_ramp-4));opacity:.55}
+.sc{fill:none;stroke:rgb(from color-mix(in srgb,var(--illos-ramp-4,var(--_ramp-4)) 18%,var(--g)) r g b/clamp(.33,(r + g + b)/382.5,1));stroke-width:.8}
+.bm{fill:none;stroke:var(--illos-ramp-2,var(--_ramp-2));stroke-width:2.4;stroke-dasharray:5 2.4}
+.sp{fill:none;stroke:var(--illos-spark,var(--_spark));stroke-width:1.2;stroke-linecap:round;opacity:.85}
+.gr{stroke:rgb(from color-mix(in srgb,var(--k) 9%,var(--g)) r g b/clamp(.67,(r + g + b)/382.5,1));stroke-width:1}
+.bx,.ln,.lv{fill:none;stroke:var(--illos-mark,var(--_mark));stroke-width:1.2}
+.dot{fill:var(--illos-mark,var(--_mark))}.cf{fill:var(--illos-mark,var(--_mark))}
+.ct{fill:none;stroke:var(--g);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.tx{fill:none;stroke:var(--illos-mark,var(--_mark));stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+@keyframes sh-rag_qn{0%{opacity:1}6.667%{opacity:1;animation-timing-function:cubic-bezier(0.23,1,0.32,1)}9.333%{opacity:0}24.444%{opacity:0;animation-timing-function:cubic-bezier(0.23,1,0.32,1)}28.444%{opacity:1}100%{opacity:1}}
+.qn{opacity:1;animation:sh-rag_qn 4.5s linear both}
+@keyframes sh-rag_clock{0%{opacity:0}100%{opacity:0}}
+.sh-clock{animation:sh-rag_clock 4.5s linear both}
+*{animation-iteration-count:infinite!important;animation-play-state:var(--illos-play,running)!important}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+}
+</style>
+<g class="sh-still"><path class="sc" d="M4 0V460M11 0V460M18 0V460M25 0V460M32 0V460M39 0V460M46 0V460M53 0V460M60 0V460M67 0V460M74 0V460M81 0V460M88 0V460M95 0V460M102 0V460M109 0V460M116 0V460M123 0V460M130 0V460M137 0V460M144 0V460M151 0V460M158 0V460M165 0V460M172 0V460M179 0V460M186 0V460M193 0V460M200 0V460M207 0V460M214 0V460M221 0V460M228 0V460M235 0V460M242 0V460M249 0V460M256 0V460M263 0V460M270 0V460M277 0V460M284 0V460M291 0V460M298 0V460M305 0V460M312 0V460M319 0V460M326 0V460M333 0V460M340 0V460M347 0V460M354 0V460M361 0V460M368 0V460M375 0V460M382 0V460M389 0V460M396 0V460M403 0V460M410 0V460M417 0V460M424 0V460M431 0V460M438 0V460M445 0V460M452 0V460M459 0V460M466 0V460M473 0V460M480 0V460M487 0V460M494 0V460M501 0V460M508 0V460M515 0V460M522 0V460M529 0V460M536 0V460M543 0V460M550 0V460M557 0V460M564 0V460M571 0V460M578 0V460M585 0V460M592 0V460M599 0V460M606 0V460M613 0V460M620 0V460M627 0V460M634 0V460M641 0V460M648 0V460M655 0V460M662 0V460M669 0V460M676 0V460M683 0V460M690 0V460M697 0V460M704 0V460M711 0V460M718 0V460"/><path class="gr" d="M0 0V460M96 0V460M192 0V460M288 0V460M384 0V460M480 0V460M576 0V460M672 0V460M0 0H720M0 96H720M0 192H720M0 288H720M0 384H720"/><path class="b0" d="M207 150.4V157.4M214 150.4V157.4M221 150.4V157.4M228 225.6V242M235 225.6V242M242 225.6V242M249 225.6V242M249 272.6V279.6M256 225.6V242M256 272.6V279.6M263 225.6V232.6M263 272.6V279.6M270 150.4V157.4M270 225.6V232.6M277 150.4V157.4M284 150.4V157.4M620 282V289M634 244.4V251.4M648 206.8V213.8" stroke-width="3.6"/><path class="b1" d="M207 169.2V204.4M214 169.2V204.4M221 178.6V195M228 178.6V195M249 291.4V326.6M256 291.4V326.6M263 291.4V317.2M270 169.2V204.4M270 291.4V317.2M277 169.2V204.4M277 291.4V298.4M284 169.2V176.2M284 188V204.4M291 169.2V176.2M291 197.4V204.4M564 188V195M564 206.8V213.8M564 225.6V232.6M564 244.4V251.4M564 263.2V270.2M564 282V289M571 188V195M571 206.8V213.8M571 225.6V232.6M571 244.4V251.4M571 263.2V270.2M571 282V289M578 188V195M578 206.8V213.8M578 225.6V232.6M578 244.4V251.4M578 263.2V270.2M578 282V289M585 188V195M585 206.8V213.8M585 225.6V232.6M585 244.4V251.4M585 263.2V270.2M585 282V289M592 188V195M592 206.8V213.8M592 225.6V232.6M592 244.4V251.4M592 263.2V270.2M592 282V289M599 188V195M599 206.8V213.8M599 225.6V232.6M599 244.4V251.4M599 263.2V270.2M599 282V289M606 188V195M606 206.8V213.8M606 225.6V232.6M606 244.4V251.4M606 263.2V270.2M606 282V289M613 188V195M613 206.8V213.8M613 225.6V232.6M613 244.4V251.4M613 263.2V270.2M620 188V195M620 206.8V213.8M620 225.6V232.6M620 244.4V251.4M620 263.2V270.2M627 188V195M627 206.8V213.8M627 225.6V232.6M627 263.2V270.2M634 188V195M634 206.8V213.8M634 225.6V232.6M634 263.2V270.2M641 188V195M641 225.6V232.6M641 263.2V270.2M648 188V195" stroke-width="2.7"/><path class="b2" d="M46 282V289M53 47V54M53 65.8V72.8M53 94V101M53 282V289M53 319.6V336M53 376V383M53 423V430M60 47V54M60 65.8V72.8M60 376V383M60 413.6V420.6M67 47V54M67 65.8V72.8M67 394.8V401.8M67 413.6V420.6M74 131.6V138.6M74 150.4V157.4M74 394.8V401.8M81 65.8V72.8M81 131.6V138.6M88 131.6V138.6M123 329V336M130 329V336M130 357.2V364.2M137 28.2V35.2M137 329V336M144 28.2V35.2M144 56.4V63.4M144 75.2V82.2M151 28.2V35.2M151 65.8V72.8M193 376V383M193 394.8V411.2M193 423V430M200 376V383M200 413.6V430M207 376V383M214 423V430M221 159.8V166.8M221 225.6V242M228 159.8V166.8M228 216.2V223.2M228 244.4V260.8M235 37.6V44.6M235 56.4V63.4M235 75.2V91.6M235 169.2V185.6M235 216.2V223.2M235 244.4V260.8M242 37.6V44.6M242 56.4V63.4M242 75.2V91.6M242 216.2V223.2M242 244.4V251.4M249 65.8V72.8M249 216.2V223.2M249 244.4V251.4M256 56.4V72.8M256 216.2V223.2M256 244.4V251.4M263 216.2V223.2M263 244.4V251.4M263 319.6V326.6M270 216.2V223.2M270 244.4V251.4M270 282V289M277 225.6V242M277 310.2V317.2M284 159.8V166.8M291 188V195M298 159.8V166.8M298 178.6V195M340 376V383M340 404.2V411.2M340 423V430M347 376V383M354 376V383M354 413.6V420.6M361 423V430M368 235V242M368 423V430M375 37.6V44.6M375 300.8V307.8M375 319.6V326.6M375 338.4V345.4M382 37.6V44.6M382 235V242M382 300.8V307.8M382 319.6V326.6M389 65.8V91.6M389 150.4V157.4M389 169.2V176.2M389 300.8V307.8M389 347.8V354.8M396 150.4V157.4M396 169.2V176.2M396 197.4V204.4M396 329V336M403 197.4V204.4M410 235V242M438 84.6V91.6M438 131.6V138.6M438 357.2V364.2M445 84.6V91.6M445 103.4V110.4M445 122.2V129.2M445 357.2V364.2M445 385.4V401.8M452 84.6V91.6M452 235V242M452 357.2V364.2M452 404.2V411.2M459 112.8V119.8M466 131.6V138.6M480 235V242M494 235V242M522 235V242" stroke-width="1.8"/><path class="b3" d="M46 291.4V336M53 75.2V91.6M53 291.4V317.2M53 385.4V420.6M60 56.4V63.4M60 75.2V101M60 282V317.2M60 329V336M60 394.8V411.2M60 423V430M67 56.4V63.4M67 75.2V91.6M67 310.2V336M67 376V383M67 404.2V411.2M67 423V430M74 47V72.8M74 94V101M74 159.8V185.6M74 282V317.2M74 376V383M74 404.2V430M81 47V63.4M81 75.2V82.2M81 94V101M81 141V185.6M81 394.8V430M88 150.4V185.6M95 131.6V138.6M95 150.4V157.4M95 178.6V185.6M102 141V176.2M123 347.8V383M130 338.4V354.8M130 366.6V383M137 37.6V82.2M137 338.4V383M144 37.6V54M144 65.8V72.8M144 347.8V354.8M144 366.6V373.6M151 47V54M151 75.2V82.2M151 329V383M158 28.2V35.2M158 47V54M158 65.8V82.2M165 28.2V54M165 65.8V82.2M193 413.6V420.6M200 385.4V411.2M207 159.8V166.8M207 404.2V430M214 159.8V166.8M214 394.8V411.2M221 169.2V176.2M221 197.4V204.4M221 413.6V420.6M228 150.4V157.4M228 169.2V176.2M228 197.4V204.4M235 65.8V72.8M235 150.4V166.8M235 188V204.4M242 65.8V72.8M249 37.6V63.4M249 282V289M256 37.6V44.6M256 75.2V91.6M256 282V289M263 37.6V72.8M263 84.6V91.6M263 282V289M270 159.8V166.8M270 272.6V279.6M270 319.6V326.6M277 159.8V166.8M277 272.6V289M277 300.8V307.8M277 319.6V326.6M284 178.6V185.6M291 150.4V166.8M291 178.6V185.6M298 150.4V157.4M298 169.2V176.2M298 197.4V204.4M298 235V242M312 235V242M326 235V242M340 235V242M340 394.8V401.8M340 413.6V420.6M347 385.4V430M354 235V242M354 394.8V411.2M354 423V430M361 376V383M361 394.8V420.6M368 385.4V392.4M368 404.2V420.6M375 47V91.6M375 310.2V317.2M375 329V336M375 347.8V354.8M382 47V91.6M382 329V354.8M389 159.8V166.8M389 178.6V204.4M389 310.2V317.2M389 329V345.4M396 37.6V44.6M396 75.2V91.6M396 178.6V195M396 235V242M396 310.2V317.2M396 338.4V354.8M403 159.8V185.6M403 300.8V317.2M403 329V345.4M410 150.4V157.4M410 188V204.4M417 159.8V166.8M417 178.6V204.4M424 235V242M438 94V129.2M438 235V242M438 376V411.2M445 94V101M445 112.8V119.8M445 131.6V138.6M445 376V383M445 404.2V411.2M452 94V101M452 112.8V138.6M452 366.6V392.4M459 84.6V110.4M459 131.6V138.6M459 366.6V411.2M466 84.6V110.4M466 122.2V129.2M466 235V242M466 366.6V401.8M508 235V242M557 178.6V298.4M564 178.6V185.6M564 197.4V204.4M564 216.2V223.2M564 235V242M564 253.8V260.8M564 291.4V298.4M571 178.6V185.6M571 197.4V204.4M571 216.2V223.2M571 253.8V260.8M571 272.6V279.6M571 291.4V298.4M578 178.6V185.6M578 197.4V204.4M578 216.2V223.2M578 235V242M578 253.8V260.8M578 272.6V279.6M578 291.4V298.4M585 178.6V185.6M585 197.4V204.4M585 216.2V223.2M585 235V242M585 253.8V260.8M585 272.6V279.6M585 291.4V298.4M592 178.6V185.6M592 197.4V204.4M592 216.2V223.2M592 235V242M592 253.8V260.8M592 291.4V298.4M599 178.6V185.6M599 197.4V204.4M599 235V242M599 272.6V279.6M599 291.4V298.4M606 178.6V185.6M606 197.4V204.4M606 216.2V223.2M606 235V242M606 253.8V260.8M606 272.6V279.6M606 291.4V298.4M613 197.4V204.4M613 216.2V223.2M613 253.8V260.8M613 272.6V279.6M613 291.4V298.4M620 178.6V185.6M620 197.4V204.4M620 216.2V223.2M620 253.8V260.8M620 272.6V279.6M620 291.4V298.4M627 178.6V185.6M627 197.4V204.4M627 216.2V223.2M627 244.4V260.8M627 272.6V298.4M634 178.6V185.6M634 197.4V204.4M634 216.2V223.2M634 235V242M634 253.8V260.8M634 272.6V298.4M641 178.6V185.6M641 197.4V223.2M641 235V260.8M641 282V298.4M648 178.6V185.6M648 197.4V204.4M648 216.2V242M648 253.8V298.4M655 178.6V298.4" stroke-width="1.1"/><path class="sp" d="M228 237.4v1.2M235 237.4v1.2M242 228v1.2M249 237.4v1.2M256 228v1.2M256 275v1.2M263 228v1.2M270 152.8v1.2M284 152.8v1.2M634 246.8v1.2M648 209.2v1.2"/></g>
+<g class="box"><path class="bx" pathLength="1" d="M543 162H674V312.2H543Z"/><circle class="dot" cx="543" cy="162" r="2.2"/><circle class="dot" cx="674" cy="162" r="2.2"/><circle class="dot" cx="543" cy="312.2" r="2.2"/><circle class="dot" cx="674" cy="312.2" r="2.2"/><g class="chip"><rect class="cf" x="543" y="162" width="54.16" height="14.9"/><path class="ct" d="M548 172.9L548 168.3L550.3 166L552.6 168.3L552.6 172.9M548 170.03L552.6 170.03M555.36 172.9L555.36 166L559.96 172.9L559.96 166M567.32 167.15L566.17 166L563.87 166L562.72 167.15L562.72 168.3L563.87 169.45L566.17 169.45L567.32 170.6L567.32 171.75L566.17 172.9L563.87 172.9L562.72 171.75M570.08 166L571.23 172.9L572.38 169.45L573.53 172.9L574.68 166M582.04 166L577.44 166L577.44 172.9L582.04 172.9M577.44 169.45L580.89 169.45M584.8 172.9L584.8 166L588.25 166L589.4 167.15L589.4 168.3L588.25 169.45L584.8 169.45M587.1 169.45L589.4 172.9"/></g></g><path class="tx" d="M52 30L52 34.8L54.4 34.8L55.2 34L55.2 30.8L54.4 30L52 30M57.92 30L59.52 30L60.32 30.8L60.32 34L59.52 34.8L57.92 34.8L57.12 34L57.12 30.8L57.92 30M65.44 30.8L64.64 30L63.04 30L62.24 30.8L62.24 34L63.04 34.8L64.64 34.8L65.44 34M67.36 30L67.36 34L68.16 34.8L69.76 34.8L70.56 34L70.56 30M72.48 34.8L72.48 30L74.08 32.4L75.68 30L75.68 34.8M80.8 30L77.6 30L77.6 34.8L80.8 34.8M77.6 32.4L80 32.4M82.72 34.8L82.72 30L85.92 34.8L85.92 30M87.84 30L91.04 30M89.44 30L89.44 34.8M96.16 30.8L95.36 30L93.76 30L92.96 30.8L92.96 31.6L93.76 32.4L95.36 32.4L96.16 33.2L96.16 34L95.36 34.8L93.76 34.8L92.96 34"/><g class="qn"><path class="tx" d="M168.8 236L170.4 236L171.2 236.8L171.2 240L170.4 240.8L168.8 240.8L168 240L168 236.8L168.8 236M170 239.6L171.2 240.8M173.12 236L173.12 240L173.92 240.8L175.52 240.8L176.32 240L176.32 236M181.44 236L178.24 236L178.24 240.8L181.44 240.8M178.24 238.4L180.64 238.4M186.56 236.8L185.76 236L184.16 236L183.36 236.8L183.36 237.6L184.16 238.4L185.76 238.4L186.56 239.2L186.56 240L185.76 240.8L184.16 240.8L183.36 240M188.48 236L191.68 236M190.08 236L190.08 240.8M194.4 236L196 236M195.2 236L195.2 240.8M194.4 240.8L196 240.8M199.52 236L201.12 236L201.92 236.8L201.92 240L201.12 240.8L199.52 240.8L198.72 240L198.72 236.8L199.52 236M203.84 240.8L203.84 236L207.04 240.8L207.04 236"/></g>
+<rect class="sh-clock" width="0" height="0"/>
+<metadata class="illos-field" data-cycle="4.5"><![CDATA[// A page centred at c: 5 columns by 6 cells. Faint paper that flickers, a title, ragged lines of text; lit brightens it
+// and hot (a read) flashes its text.
+float page(vec2 p, vec2 c, float s, float lit, float hot, float ph) {
+  vec2 q = p - c + vec2(17.5, 28.2);
+  if (q.x < 0.0 || q.x >= 35.0 || q.y < 0.0 || q.y >= 56.4) return 0.0;
+  float lc = floor(q.x / 7.0); float lk = floor(q.y / 9.4);
+  float hs = hash(vec2(lc + s * 5.0, lk + s));
+  float v = mix(0.13, 0.28, lit) + 0.05 * sin(ph + hs * 40.0);
+  if (lk < 0.5) { if (lc < 2.0 + floor(2.0 * hash(vec2(s, 1.0)))) v = mix(0.45, 1.1, lit); }
+  else if (lk > 1.5) { if (lc < 2.0 + floor(3.6 * hash(vec2(s, lk)))) v = mix(0.3, 0.72, lit) + 0.4 * hot; }
+  return v;
+}
+// The question: a speech bubble 9 columns by 4 cells, two lines of words inside its rim, a tail under its left end.
+float bubble(vec2 p, vec2 c, float k) {
+  vec2 q = p - c + vec2(31.5, 18.8);
+  if (q.x < 0.0 || q.x >= 63.0 || q.y < 0.0 || q.y >= 47.0) return 0.0;
+  float lc = floor(q.x / 7.0); float lk = floor(q.y / 9.4);
+  float side = (lc < 0.5 || lc > 7.5) ? 1.0 : 0.0;
+  float v = 0.0;
+  if (lk < 3.5) {
+    if (lk < 0.5 || lk > 2.5) v = side > 0.5 ? 0.0 : 0.45;
+    else if (side > 0.5) v = 0.45;
+    else if (lk < 1.5 || lc < 5.5) v = 1.15;
+  } else if (lc > 0.5 && lc < 2.5) v = 0.45;
+  return v * k;
+}
+float field(vec2 p, float t) {
+  if (p.x < 24.0 || p.x > 696.0 || p.y < 24.0 || p.y > 436.0) return 0.0;
+  float ph = TAU * t / T;
+  float v = 0.0;
+  // the rest of the field, idle
+  v = max(v, page(p, vec2(70.0, 78.0), 4.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(150.0, 58.0), 5.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(250.0, 60.0), 6.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(390.0, 64.0), 7.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(452.0, 108.0), 8.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(90.0, 162.0), 9.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(404.0, 182.0), 10.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(62.0, 310.0), 11.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(134.0, 360.0), 12.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(204.0, 404.0), 13.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(392.0, 330.0), 14.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(352.0, 404.0), 15.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(450.0, 380.0), 16.0, 0.0, 0.0, ph));
+  v = max(v, page(p, vec2(66.0, 400.0), 17.0, 0.0, 0.0, ph));
+  // the three nearest: let go as the next question comes in, lit as the ring reaches them, pulled in, read and sent
+  {
+    float g = t < 1.5 ? 1.0 - ease((t - 0.3) / 0.6) : ease((t - 1.850) / 0.65);
+    float lit = t < 1.0 ? 1.0 - sm(0.3, 0.75, t) : sm(1.379, 1.499, t);
+    float hot = exp(-pow(t - 2.590, 2.0) / 0.006);
+    v = max(v, page(p, mix(vec2(165.0, 175.0), vec2(220.0, 182.0), g), 1.0, lit, hot, ph));
+  }
+  {
+    float g = t < 1.5 ? 1.0 - ease((t - 0.3) / 0.6) : ease((t - 1.910) / 0.65);
+    float lit = t < 1.0 ? 1.0 - sm(0.3, 0.75, t) : sm(1.459, 1.579, t);
+    float hot = exp(-pow(t - 2.840, 2.0) / 0.006);
+    v = max(v, page(p, mix(vec2(300.0, 350.0), vec2(262.0, 302.0), g), 2.0, lit, hot, ph));
+  }
+  {
+    float g = t < 1.5 ? 1.0 - ease((t - 0.3) / 0.6) : ease((t - 1.970) / 0.65);
+    float lit = t < 1.0 ? 1.0 - sm(0.3, 0.75, t) : sm(1.587, 1.707, t);
+    float hot = exp(-pow(t - 3.090, 2.0) / 0.006);
+    v = max(v, page(p, mix(vec2(335.0, 125.0), vec2(282.0, 180.0), g), 3.0, lit, hot, ph));
+  }
+  // the question: the last one fades as the next comes in along the lane and lands
+  v = max(v, bubble(p, vec2(250.0, 238.0), 1.0 - sm(0.3, 0.5, t)));
+  v = max(v, bubble(p, mix(vec2(40.0, 238.0), vec2(250.0, 238.0), ease((t - 0.3) / 0.8)), sm(0.3, 0.45, t)));
+  {
+    float u = clamp((t - 0.3) / 0.8, 0.0, 1.0);
+    float sp = (u > 0.0 && u < 1.0) ? sin(3.14159 * u) : 0.0;
+    vec2 b = mix(vec2(40.0, 238.0), vec2(250.0, 238.0), ease(u));
+    for (int s = 1; s <= 3; s++) v += blob(p, b - vec2(32.0 + 13.0 * float(s), 0.0), 9.0 - 1.5 * float(s), sp * (0.5 - 0.12 * float(s)));
+  }
+  // the search ring
+  if (t > 1.100 && t < 1.750) {
+    float u = (t - 1.100) / 0.650;
+    float R = 14.0 + 136.0 * (1.0 - (1.0 - u) * (1.0 - u));
+    v += 0.5 * (1.0 - u) * exp(-pow(length((p - vec2(250.0, 238.0)) * vec2(1.0, 1.0)) - R, 2.0) / 90.0);
+  }
+  // the line to the answer: dotted, on one row of cells; each part runs down it with a short tail
+  if (abs(p.y - 238.500) < 1.0 && p.x > 290.0 && p.x < 535.0 && mod(floor((p.x - 4.0) / 7.0 + 0.5), 2.0) < 0.5) v = max(v, 0.3);
+  {
+    float u = clamp((t - 2.650) / 0.4, 0.0, 1.0);
+    if (u > 0.0 && u < 1.0) { float x = mix(304.0, 520.0, ease(u)); float k = sm(0.0, 0.1, u) * (1.0 - sm(0.85, 1.0, u)); v += blob(p, vec2(x, 238.500), 9.0, 1.2 * k) + blob(p, vec2(x - 14.0, 238.500), 6.0, 0.45 * k); }
+  }
+  {
+    float u = clamp((t - 2.900) / 0.4, 0.0, 1.0);
+    if (u > 0.0 && u < 1.0) { float x = mix(304.0, 520.0, ease(u)); float k = sm(0.0, 0.1, u) * (1.0 - sm(0.85, 1.0, u)); v += blob(p, vec2(x, 238.500), 9.0, 1.2 * k) + blob(p, vec2(x - 14.0, 238.500), 6.0, 0.45 * k); }
+  }
+  {
+    float u = clamp((t - 3.150) / 0.4, 0.0, 1.0);
+    if (u > 0.0 && u < 1.0) { float x = mix(304.0, 520.0, ease(u)); float k = sm(0.0, 0.1, u) * (1.0 - sm(0.85, 1.0, u)); v += blob(p, vec2(x, 238.500), 9.0, 1.2 * k) + blob(p, vec2(x - 14.0, 238.500), 6.0, 0.45 * k); }
+  }
+  // the answer page: faint paper; six lines, each written left to right by a hot head; a citation mark after each part
+  {
+    vec2 q = p - vec2(556.0, 177.0);
+    if (q.x >= 0.0 && q.x < 105.0 && q.y >= 0.0 && q.y < 122.2) {
+      float lc = floor(q.x / 7.0); float lk = floor(q.y / 9.4);
+      float a = 0.15 + 0.04 * sin(ph + hash(vec2(lc, lk)) * 40.0);
+      float clear = 1.0 - sm(0.3, 0.6, t);
+      for (int j = 0; j < 6; j++) {
+        float fj = float(j);
+        float w = fj < 0.5 ? 3.050 : fj < 1.5 ? 3.210 : fj < 2.5 ? 3.370 : fj < 3.5 ? 3.530 : fj < 4.5 ? 3.690 : 3.850;
+        float len = fj < 0.5 ? 13.0 : fj < 1.5 ? 11.0 : fj < 2.5 ? 12.0 : fj < 3.5 ? 9.0 : fj < 4.5 ? 12.0 : 7.0;
+        if (abs(lk - 1.0 - 2.0 * fj) < 0.5) {
+          float hc = min(len, 1.0 + floor(len * clamp((t - w) / 0.160, 0.0, 1.0)));
+          float on = t < 1.0 ? clear : step(w, t) * step(lc, hc);
+          if (lc >= 1.0 && lc < 1.0 + len) a = max(a, 0.72 * on);
+          if (t > w && t < w + 0.160 && abs(lc - hc) < 0.5) a = max(a, 1.2);
+          // the citation mark, two cells after a part's last line
+          if (mod(fj, 2.0) > 0.5 && abs(lc - len - 2.0) < 0.5) a = max(a, 1.15 * (t < 1.0 ? clear : sm(w + 0.160, w + 0.220, t)));
+        }
+      }
+      v = max(v, a);
+    }
+  }
+  return v;
+}]]></metadata>
+</svg>
